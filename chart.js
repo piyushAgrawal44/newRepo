@@ -1,19 +1,21 @@
-import Chart from './node_modules/chart.js/auto';
-
-const myDiv = document.createElement("div");
-myDiv.setAttribute('style','width:300px;height:300px;');
-
-const myCanvas = document.createElement("canvas");
-myCanvas.setAttribute('width','100');
-myCanvas.setAttribute('height','100');
-
-myCanvas.id="myChart";
-
-myDiv.appendChild(myCanvas);
-
+import Chart  from './node_modules/chart.js/auto/auto.js';
 
 const plugin = ({ widgets, simulator }) => {
     widgets.register("MyLineChart", (box) => {
+        
+
+            const myDiv = document.createElement("div");
+            myDiv.style="width:300px; height:300px;"
+
+            const myCanvas = document.createElement("canvas");
+            myCanvas.setAttribute('width','100');
+            myCanvas.setAttribute('height','100');
+
+            myCanvas.id="myChart";
+
+            myDiv.appendChild(myCanvas);
+
+
             box.injectNode(myDiv);
         }
     )
