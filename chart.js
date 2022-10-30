@@ -14,7 +14,7 @@ myDiv.appendChild(myCanvas);
 
 
 const plugin = ({ widgets, simulator }) => {
-    widgets.register("myGarph", (box) => {
+    widgets.register("MyLineChart", (box) => {
             box.injectNode(myDiv);
         }
     )
