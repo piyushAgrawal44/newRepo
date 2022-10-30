@@ -9,7 +9,7 @@ myCanvas.setAttribute('width','100');
 myCanvas.setAttribute('height','100');
 
 myCanvas.id="myChart";
-
+myCanvas.innerText="Hello";
 myDiv.appendChild(myCanvas);
 
 
@@ -49,9 +49,9 @@ const plugin = ({ widgets, simulator }) => {
             }
         }
     };
-    const ctx = document.getElementById('myChart');
-    const myChart = new Chart(ctx,config);
+    // const ctx = document.getElementById('myChart');
+    // const myChart = new Chart(ctx,config);
 
-    console.log("Every thing works fine",myChart);
+    console.log("Every thing works fine");
 }
 export default plugin;
