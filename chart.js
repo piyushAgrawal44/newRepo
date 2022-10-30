@@ -1,5 +1,5 @@
 
-import Chart from './node_modules/chart.js';
+// import Chart from './node_modules/chart.js';
 
 const myDiv = document.createElement("div");
 myDiv.setAttribute('style','width:300px;height:300px;');
