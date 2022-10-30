@@ -54,6 +54,5 @@ const plugin = ({ widgets, simulator }) => {
     const ctx = document.getElementById('myChart');
     const myChart = new Chart(ctx,config);
 
-    console.log("Every thing works fine",myChart);
 }
 export default plugin;
